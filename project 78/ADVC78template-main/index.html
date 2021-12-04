@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            Project C78
+        </title>
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+    </head>
+    <body>
+        <center>
+            <h1>
+                My Family Book
+            </h1>
+<button type="button" onclick="family()">Next</button>
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="family_member_image" width="150px" height="200px">
+            <h4 id="family_member_name"></h4>
+            
+          
+        
+
+        <script src="main.js">
+            var names=[
+                "2. My father (Kulwinder Singh)",
+                "3. My mother (Preet inder Kaur)",
+                "4. My younger brother (Hans partap Singh)"
+                
+            ];
+
+            var images=[
+                "father.jpeg",
+                "mom.jpg",
+                "Brother.jpg"
+            ];
+
+            var i=0
+            function family(){
+                document.getElementById("one").innerhtml=names[i];
+                document.getElementById("family_member_image").src=images[i];
+                i++;
+                if(i==4){
+                    i=0;
+                }}
+            
+        </script>
+        </center>
+    </body>
+</html>
